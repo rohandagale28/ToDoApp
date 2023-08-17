@@ -1,0 +1,75 @@
+:root {
+  --apple: "San Francisco", Helvetica, Arial, sans-serif;
+  --prompt: "Prompt", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--prompt);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+.item {
+  height: 8rem;
+}
+
+.item-card1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #0c0c0f;
+  border-right: 3px #69696999 solid;
+  box-sizing: border-box;
+  padding: 1.6rem;
+  color: #f0f0f5;
+}
+
+.item-card2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  height: 6rem;
+  height: 500px;
+  width: auto;
+  padding: 2rem 0rem;
+}
+
+.item-card3 {
+  grid-column-start: 6;
+  grid-column-end: 12;
+  height: 80vh;
+  width: 400px;
+  border-radius: 16px;
+  padding: 2rem 1.6rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #69696999;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
